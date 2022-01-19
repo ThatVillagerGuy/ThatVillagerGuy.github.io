@@ -1,15 +1,5 @@
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99715444-7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-99715444-7');
-    </script>
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
     <link href='style.css' rel='stylesheet' type='text/css'>
     <title>SapplyValues Results</title>
     <link rel="icon" type="x-icon" href="icon.png">
@@ -25,15 +15,14 @@
     </svg>
     <hr>
     
-	<h1 class="title">Results</h1></br>
-    <p style="text-align:center;margin:-2px auto">If you like this site, <a href="https://ko-fi.com/tayloroneill">consider chucking me a few bucks</a> :)))</p></br>
-    <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
-		<text x="50%" y="15" class="svgHeader">Results</text>
+	<h1 class="title">Resultate</h1></br>
+   <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
+		<text x="50%" y="15" class="svgHeader">Resultate</text>
 	</svg>
     
     <img src="" id="banner"></canvas></br>
-    <p style="text-align:center;margin:-2px auto">Hint: you can download this image directly. No need to screenshot!</p></br>
-    <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
+    <p style="text-align:center;margin:-2px auto">Tipp: Du kannst dieses Bild direkt speichern. Du musst keinen screenshot machen!</p></br>
+    <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Zurück</button> <br>
 	
     
     <script>
@@ -71,9 +60,9 @@
                 ctx.font="50px Montserrat"
                 ctx.textAlign="center"
                 ctx.fillStyle="#222222"
-                ctx.fillText("Left / Right Axis (x): " + x_axis, 725, 1375)
-                ctx.fillText("Auth / Lib Axis (y): " + y_axis, 725, 1450)
-                ctx.fillText("Prog / Con Axis (z): " + z_axis, 725, 1525)
+                ctx.fillText("Links / Rechts Achse (x): " + x_axis, 725, 1375)
+                ctx.fillText("Authoritär / Libertär Achse (y): " + y_axis, 725, 1450)
+                ctx.fillText("Progressiv / Konservativ Achse (z): " + z_axis, 725, 1525)
                 ctx.textAlign="right"
                 ctx.font="60px Montserrat"
                 ctx.fillText("SapplyValues.github.io", 1820, 1560)

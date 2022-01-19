@@ -1,21 +1,11 @@
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99715444-7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-99715444-7');
-    </script>
-
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
     <link href='style.css' rel='stylesheet' type='text/css'>
-    <title>SapplyValues</title>
+    <title>SapplyValues - German</title>
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -25,26 +15,29 @@
 	</svg>
     <hr>
     <img src="" id="banner">
-    <button class="button" onclick="location.href='instructions.html';">Click here to start!</button>
+    <button class="button" onclick="location.href='instructions.html';">Hier klicken um zu beginnen.</button>
 
-    <h2>What is SapplyValues?</h2>
-        <p>SapplyValues is a political compass test that combines the questions of the <a href="http://sapplypoliticalcompass.com/">Sapply test</a>* with the UI of <a href="https://8values.github.io/">8values</a>. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be displayed on a political compass.<br /><br />
-        * A few questions have been reworded as I feel some of them were poorly written.</br></br>
-        There are <b><u><span id="numOfQuestions"></span></u></b> questions in the test.</p>
-    <h2>Why use this version?</h2>
-    <p>Both the original and the popular clone version have a number of issues and are very poorly coded. For starters, many users run into NaN errors. This happens when using the keyboard to press enter to go to the next page instead of clicking it. This doesn't apply at all to this version.</br></br>
-    Secondly, the original version does not properly generate an image. It puts an overlay on top of a CSS-defined background image, meaning that if you save the image, it just saves the overlay instead of the whole compass. This is fixed in this version.</br></br>
-    Thirdly, this version supports URL parameters, meaning you can easily share the link to your results and if you lose the image, you can find the results page entry with parameters in your history so you don't have to retake the whole test.</br></br>
-    Finally, the 8values / 9Axes UI is far better (in my opinion anyway). It looks nicer and takes less clicks to answer.</p>
-    <h2>Your questions / results suck!</h2>
-    <p>You will have to complain to the original Sapply creator. I did not make this test, I simply changed the UI.</p>
-	<h2>Privacy notice</h2>
-    <p>This site uses Google Analytics. As well at the end of the test, you will be given the option to fill out general demographic information about yourself. There will be 3 options. The first will take you to a small survey and will record your answers to that along with the results. The second will just record your results. The third will not record anything. All information recorded is totally anonymous.</p>
-    <h2>Legal notice</h2>
+    <h2>Was ist SapplyValues?</h2>
+        <p>SapplyValues ist ein politischer Kompass Test, der Fragen von <a href="http://sapplypoliticalcompass.com/">Sapply test</a>* mit einer UI von <a href="https://8values.github.io/">8values</a> verbindet, hierbei handelt es sich um die deutsche Übersetzung der Seite <a href="https://github.com/SapplyValues/SapplyValues.github.io">SapplyValues.github.io</a>**. Dir werden Aussagen gezeigt und du musst mit deiner Meinung dazu antworten, diese reichen von <b>Starke Zustimmung</b> bis <b>Starke Ablehnung</b>, jede Antwort beeinflusst deine Punkte leicht. Am Ende vom Quiz, werden deine Antworten auf einem politisches Kompass angezeigt.<br /><br />
+        * Die Fragen wurden teilweise umgeschrieben.</br></br>
+	** Die Fragen wurden von mir aus dem Englischen übersetzt, dabei kann es zu leichten Bedeutungsänderunge gekommen sein.
+        Es gibt <b><u><span id="numOfQuestions"></span></u></b> Fragen im Test.</p>
+    <h2>Warum diese Version verwenden?</h2>
+    <p>Sowohl die orginale als auch der beliebte Klon haben einige Probleme und sind sehr schlecht programmiert. Zunächst tritt bei vielen Nutzern ein NaN ("Not a number") Fehler auf. Das passiert wenn man die Tastatur verwendet um Enter zu drücken sund auf die nächste Seite zu kommen anstatt darauf zu klicken. Bei dieser Version passiert das nicht.</br></br>
+    Des weiteren geniert die orginale Version kein richtiges Bild. Sie platziert nur ein Overlay über ein CSS-definiertes Hintergrundbild, Was bedeutet, dass wenn du das Bild speichern möchtest, nur das Overlay gespeichert wird und nicht der komplette Kompass. Auch das tritt in dieser Version nicht auf.</br></br>
+    Drittens unterstützt diese Version URL-Parameter, das bedeutet du kannst einfach den Link zu deinem Ergebnis teilen und wenn du das Bild verlierst findest du den Link mit Parametern in deinem Browserverlauf, dadurch musst du nicht den ganzen Test wiederholen.</br></br>
+    Zuletzt ist die UI von 8values / 9Axes sehr viel besser (zumindest meiner Meinung nach). Sie sieht besser aus und benötigt weniger Klicks um zu antworten.</p>
+    <h2>Du bist unzufrieden mit Fragen oder Antworten!</h2>
+    <p>Wende dich an den Entwickler des orginalen Sapply. Ich habe diesen Test nicht entwickelt nur die UI gemacht.</p>
+	<h2>Datenschutz Anmerkung</h2>
+    <p>Anders als die Englische Version dieser Seite verwenden wir kein Google Analytics und erheben keine der Daten. Politische Meinung ist ein sehr sensibles Thema weshalb der Schutz politischer Daten besonders wichtig ist. Wenn sie sicher gehen wollen können sie auch den Code von <a href="https://github.com/ThatVillagerGuy/SapplyValues.github.io">Github</a> herrunterladen, überprüfen und lokal auf ihrem Rechner ausführen. Um maximale Transparenz zu gewährleisten muss ich an dieser Stelle anmerken, dass die Seite auf Github gehostet wird, welches zu Microsoft gehört, dadurch sind grundsätzliche Datenschutzhinweise von Github zu beachten. </p>
+    <h2>Rechtliche Hinweise</h2>
     <p>Copyright (C) 2017-2019 8values</p>
     <p>Copyright (C) 2020-2021 SapplyValues</p>
     <p>8values, 9axes, and SapplyValues are licensed under the Expat/MIT license. You can find a copy of the license <a href="LICENSE">here</a> or on the <a href="https://github.com/SapplyValues/SapplyValues.github.io/blob/master/LICENSE">GitHub repo</a>.</p>
 
+<br><br>
+<p> Diese übersetzte Version der Website finden sie auf <a href="https://github.com/ThatVillagerGuy/SapplyValues.github.io">Github</a> unter https://github.com/ThatVillagerGuy/SapplyValues.github.io.
     <script type="application/javascript" src="questions.js"></script>
     <script type="text/javascript">
         document.getElementById("numOfQuestions").innerHTML = questions.length;

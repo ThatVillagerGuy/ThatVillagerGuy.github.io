@@ -1,14 +1,4 @@
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99715444-7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-99715444-7');
-    </script>
-
     <meta charset="utf-8">
     <title>SapplyValues Quiz</title>
 
@@ -30,15 +20,15 @@
 		<text x="50%" y="15" class="svgHeader">SapplyValues</text>
 	</svg>
 <hr>
-<h2 style="text-align:center;" id="question-number">Loading...</h2>
+<h2 style="text-align:center;" id="question-number">Lädt...</h2>
 <p class="question" id="question-text"></p>
-<button class="button" onclick="next_question(1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question(0.5)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Neutral / Unsure</button> <br>
-<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
-<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button class="small_button_off" id="back_button_off">Back</button><br>
+<button class="button" onclick="next_question(1.0)" style="background-color: #1b5e20;">Starke Zustimmung</button> <br>
+<button class="button" onclick="next_question(0.5)" style="background-color: #4caf50;">Zustimmung</button> <br>
+<button class="button" onclick="next_question(0)" style="background-color: #bbbbbb;">Neutral / Unsicher</button> <br>
+<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Ablehnung</button> <br>
+<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Starke Ablehnung</button> <br>
+<button class="small_button" onclick="prev_question()" id="back_button">Zurück</button>
+<button class="small_button_off" id="back_button_off">Zurück</button><br>
 
 <script>
     // variables
@@ -78,7 +68,7 @@
 
     function init_question() {
         $("#question-text").html(questionsObject[questionsOrder[qn]].question);
-        $("#question-number").html("Question "+(qn + 1)+" of "+(questionsOrder.length));
+        $("#question-number").html("Frage "+(qn + 1)+" von "+(questionsOrder.length));
 
 
 
@@ -149,7 +139,7 @@
             }
         }
         //return;
-        location.href = ((window.location.hostname == "sapplyvalues.github.io") ? `feedback.html` : `results.html`) + args
+        location.href =   `results.html` + args
 
     }
 
