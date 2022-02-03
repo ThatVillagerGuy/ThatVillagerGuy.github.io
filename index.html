@@ -1,1 +1,60 @@
-<h1>ThatVillagerGuy</h1>
+<head>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>SapplyValues - German</title>
+    <link rel="icon" type="x-icon" href="icon.png">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<h1 class="title">SapplyValues</h1>
+    <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
+		<text x="50%" y="15" class="svgHeader">SapplyValues</text>
+	</svg>
+    <hr>
+    <img src="" id="banner">
+    <button class="button" onclick="location.href='instructions.html';">Hier klicken um zu beginnen.</button>
+
+    <h2>Was ist SapplyValues?</h2>
+        <p>SapplyValues ist ein politischer Kompass Test, der Fragen von <a href="http://sapplypoliticalcompass.com/">Sapply test</a>* mit einer UI von <a href="https://8values.github.io/">8values</a> verbindet, hierbei handelt es sich um die deutsche Übersetzung der Seite <a href="https://github.com/SapplyValues/SapplyValues.github.io">SapplyValues.github.io</a>**. Dir werden Aussagen gezeigt und du musst mit deiner Meinung dazu antworten, diese reichen von <b>Starke Zustimmung</b> bis <b>Starke Ablehnung</b>, jede Antwort beeinflusst deine Punkte leicht. Am Ende vom Quiz, werden deine Antworten auf einem politisches Kompass angezeigt.<br /><br />
+        * Die Fragen wurden teilweise umgeschrieben.</br></br>
+	** Die Fragen wurden von mir aus dem Englischen übersetzt, dabei kann es zu leichten Bedeutungsänderunge gekommen sein.
+        Es gibt <b><u><span id="numOfQuestions"></span></u></b> Fragen im Test.</p>
+    <h2>Warum diese Version verwenden?</h2>
+    <p>Sowohl die orginale als auch der beliebte Klon haben einige Probleme und sind sehr schlecht programmiert. Zunächst tritt bei vielen Nutzern ein NaN ("Not a number") Fehler auf. Das passiert wenn man die Tastatur verwendet um Enter zu drücken sund auf die nächste Seite zu kommen anstatt darauf zu klicken. Bei dieser Version passiert das nicht.</br></br>
+    Des weiteren geniert die orginale Version kein richtiges Bild. Sie platziert nur ein Overlay über ein CSS-definiertes Hintergrundbild, Was bedeutet, dass wenn du das Bild speichern möchtest, nur das Overlay gespeichert wird und nicht der komplette Kompass. Auch das tritt in dieser Version nicht auf.</br></br>
+    Drittens unterstützt diese Version URL-Parameter, das bedeutet du kannst einfach den Link zu deinem Ergebnis teilen und wenn du das Bild verlierst findest du den Link mit Parametern in deinem Browserverlauf, dadurch musst du nicht den ganzen Test wiederholen.</br></br>
+    Zuletzt ist die UI von 8values / 9Axes sehr viel besser (zumindest meiner Meinung nach). Sie sieht besser aus und benötigt weniger Klicks um zu antworten.</p>
+    <h2>Du bist unzufrieden mit Fragen oder Antworten!</h2>
+    <p>Wende dich an den Entwickler des orginalen Sapply. Ich habe diesen Test nicht entwickelt nur die UI gemacht.</p>
+	<h2>Datenschutz Anmerkung</h2>
+    <p>Anders als die Englische Version dieser Seite verwenden wir kein Google Analytics und erheben keine der Daten. Politische Meinung ist ein sehr sensibles Thema weshalb der Schutz politischer Daten besonders wichtig ist. Wenn sie sicher gehen wollen können sie auch den Code von <a href="https://github.com/ThatVillagerGuy/SapplyValues.github.io">Github</a> herrunterladen, überprüfen und lokal auf ihrem Rechner ausführen. Um maximale Transparenz zu gewährleisten muss ich an dieser Stelle anmerken, dass die Seite auf Github gehostet wird, welches zu Microsoft gehört, dadurch sind grundsätzliche Datenschutzhinweise von Github zu beachten. </p>
+    <h2>Rechtliche Hinweise</h2>
+    <p>Copyright (C) 2017-2019 8values</p>
+    <p>Copyright (C) 2020-2021 SapplyValues</p>
+    <p>8values, 9axes, and SapplyValues are licensed under the Expat/MIT license. You can find a copy of the license <a href="LICENSE">here</a> or on the <a href="https://github.com/SapplyValues/SapplyValues.github.io/blob/master/LICENSE">GitHub repo</a>.</p>
+
+<br><br>
+<p> Diese übersetzte Version der Website finden sie auf <a href="https://github.com/ThatVillagerGuy/SapplyValues.github.io">Github</a> unter https://github.com/ThatVillagerGuy/SapplyValues.github.io.
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+        document.getElementById("numOfQuestions").innerHTML = questions.length;
+
+        window.onload = function() {
+            var background = new Image();
+            background.onload = function() {
+                var c = document.createElement("canvas");
+                c.width = 1850;
+                c.height = 1300;
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#EEEEEE"
+                ctx.fillRect(0, 0, 1850, 1300);
+                ctx.drawImage(background, 0, 0);
+
+                document.getElementById("banner").src = c.toDataURL();
+            }
+            background.src = "./compass.png";
+        }
+    </script>
+</body>
